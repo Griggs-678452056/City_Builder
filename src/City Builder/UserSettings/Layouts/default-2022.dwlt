@@ -225,7 +225,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 17
+  controlID: 48
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -272,8 +272,8 @@ MonoBehaviour:
     y: 486
     width: 283
     height: 453
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -299,8 +299,8 @@ MonoBehaviour:
     y: 0
     width: 1079
     height: 474
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -522,7 +522,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000ba600000bc600000
+    m_ExpandedIDs: ffffffff00000000ba600000bc600000de600000ea600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1114,11 +1114,11 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 48, y: 48}
+      snapOffset: {x: 48, y: 10}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: UnityEditor.SceneViewCameraOverlay
-      index: 10
+      index: 8
       layout: 4
       size: {x: 0, y: 0}
       sizeOverriden: 0
@@ -1133,9 +1133,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 9.051996, y: 1.8519962, z: -12.717881}
+    m_Target: {x: 11.3077545, y: -0.56376934, z: -13.400393}
     speed: 2
-    m_Value: {x: 9.051996, y: 1.8519962, z: -12.717881}
+    m_Value: {x: 11.3077545, y: -0.56376934, z: -13.400393}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1181,13 +1181,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.26842284, y: -0.23901917, z: 0.06894007, w: -0.93063295}
+    m_Target: {x: -0.40038347, y: -0.49981236, z: 0.2797794, w: -0.7152743}
     speed: 2
-    m_Value: {x: -0.2684228, y: -0.23901917, z: 0.06894007, w: -0.93063295}
+    m_Value: {x: -0.40038085, y: -0.4998091, z: 0.27977756, w: -0.71526957}
   m_Size:
-    m_Target: 9.560906
+    m_Target: 12.82995
     speed: 2
-    m_Value: 9.560906
+    m_Value: 12.82995
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1249,8 +1249,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 60600000
-      m_LastClickedID: 24672
+      m_SelectedIDs: 
+      m_LastClickedID: 0
       m_ExpandedIDs: 28fbffff5a600000
       m_RenameOverlay:
         m_UserAcceptedRename: 0

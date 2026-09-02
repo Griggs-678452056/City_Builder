@@ -30,8 +30,17 @@ public class GetInputAndPlace : MonoBehaviour
             {
                 Debug.Log("Raycast выполнен");
                 Vector3 position = hit.point;
-                Debug.Log(position);
+                Debug.Log("Позиция здания: " + CalculateGridPosition(position));
+
+                GameObject house = Instantiate(_building1, position, transform.rotation * Quaternion.Euler(270, 180, 0));
             }
         }
+    }
+
+    private Vector3 CalculateGridPosition(Vector3 inputPosition)
+    {
+        int x = Mathf.FloorToInt(inputPosition.x);
+        int z = Mathf.FloorToInt(inputPosition.z);
+        return new Vector3(x, 0, z);
     }
 }
