@@ -10,7 +10,7 @@ public class GetInputAndPlace : MonoBehaviour
 
     private void Start()
     {
-        
+
     }
 
     private void Update()
@@ -32,7 +32,17 @@ public class GetInputAndPlace : MonoBehaviour
                 Vector3 position = hit.point;
                 Debug.Log("Позиция здания: " + CalculateGridPosition(position));
 
-                GameObject house = Instantiate(_building1, position, transform.rotation * Quaternion.Euler(270, 180, 0));
+                Vector3 gridPos = CalculateGridPosition(position);
+
+                if (ObjectAtPosition(gridPos))
+                {
+                    return;
+                }
+                else
+                {
+                    GameObject house = Instantiate(_building1, gridPos, transform.rotation * Quaternion.Euler(270, 180, 0));
+                    BoxCollider houseCollider = house.AddComponent<BoxCollider>();
+                }
             }
         }
     }
@@ -42,5 +52,19 @@ public class GetInputAndPlace : MonoBehaviour
         int x = Mathf.FloorToInt(inputPosition.x);
         int z = Mathf.FloorToInt(inputPosition.z);
         return new Vector3(x, 0, z);
+    }
+
+    private bool ObjectAtPosition(Vector3 inputPosition)
+    {
+        Collider[] intersecting = Physics.OverlapSphere(inputPosition, 1f);
+
+        if (intersecting.Length < 2)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 }
